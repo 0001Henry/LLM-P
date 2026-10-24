@@ -1,0 +1,54 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /Users/henry/Desktop/study/rw/大语言模型/hw2/.cache/jieba.cache
+Loading model cost 0.235 seconds.
+Prefix dict has been built successfully.
+{
+  "seed": 42,
+  "labels": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06"
+  ],
+  "minimum_article_tokens": 30,
+  "split_counts": {
+    "train": {
+      "01": 217,
+      "02": 315,
+      "03": 230,
+      "04": 291,
+      "05": 182,
+      "06": 207
+    },
+    "dev": {
+      "01": 47,
+      "02": 67,
+      "03": 49,
+      "04": 63,
+      "05": 39,
+      "06": 44
+    },
+    "test": {
+      "01": 47,
+      "02": 68,
+      "03": 50,
+      "04": 63,
+      "05": 39,
+      "06": 45
+    }
+  },
+  "split_tokens": {
+    "train": 367631,
+    "dev": 72709,
+    "test": 74511
+  },
+  "representation_sentences": 12571,
+  "representation_tokens": 625843,
+  "february_paragraphs": 4000,
+  "source_sha256": {
+    "1998-01-2003版-带音.txt": "37b85555df2f72642ff9815ac01f51d4f50024d80ca0e2e8a6be6f93b1038639",
+    "1998-02-2003版-带音.txt": "a050351664f459aed2247bc45cd46c25da2ce893e11c44a9dea06a54529f19d8"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "gensim": "4.4.0",
+  "source": "gensim/models/word2vec_inner.c",
+  "source_sha256": "cadb877571f226d8aa91497ea59448913d08887b43f7c32a75e1e154439aca98",
+  "patched_source_sha256": "d4a5db2c7c469d74c3c9211c03cbaef99a9b3db4ea75d14ae078c208b08435f1",
+  "binary_sha256": "419fd8cfe49b98e3ca1797e206ba6424bea7487142c1508259a7e10ba3addf4b",
+  "removed_sentinel_checks": 2,
+  "regression_dot_minus_one": -1.0
+}

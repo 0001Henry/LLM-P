@@ -1,0 +1,24 @@
+Training Word2Vec
+Word2Vec {'train_seconds': 5.907092749956064, 'vectorize_seconds': 0.2469747920986265}
+Training FastText-2-4
+FastText-2-4 {'train_seconds': 8.730102374916896, 'vectorize_seconds': 0.45737800002098083}
+Training FastText-3-6
+FastText-3-6 {'train_seconds': 7.637199167045765, 'vectorize_seconds': 0.37609962502028793}
+classes=2 method=BoW dev=0.7023 test=0.6841
+classes=2 method=TF-IDF dev=0.6747 test=0.6714
+classes=2 method=LSI dev=0.6557 test=0.6542
+classes=2 method=Word2Vec dev=0.6958 test=0.6800
+classes=2 method=FastText-2-4 dev=0.7054 test=0.6782
+classes=2 method=FastText-3-6 dev=0.6984 test=0.6782
+classes=4 method=BoW dev=0.5772 test=0.5398
+classes=4 method=TF-IDF dev=0.6061 test=0.5875
+classes=4 method=LSI dev=0.5826 test=0.5286
+classes=4 method=Word2Vec dev=0.4896 test=0.4490
+classes=4 method=FastText-2-4 dev=0.4905 test=0.4717
+classes=4 method=FastText-3-6 dev=0.5055 test=0.4755
+classes=6 method=BoW dev=0.5578 test=0.5094
+classes=6 method=TF-IDF dev=0.5999 test=0.5399
+classes=6 method=LSI dev=0.5617 test=0.4853
+classes=6 method=Word2Vec dev=0.4702 test=0.4440
+classes=6 method=FastText-2-4 dev=0.5054 test=0.4408
+classes=6 method=FastText-3-6 dev=0.4987 test=0.4512

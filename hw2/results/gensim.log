@@ -1,0 +1,125 @@
+INFO:gensim.corpora.dictionary:adding document #0 to Dictionary<0 unique tokens: []>
+INFO:gensim.corpora.dictionary:adding document #10000 to Dictionary<43250 unique tokens: ['三周年', '主席', '发表', '各界', '江泽民']...>
+INFO:gensim.corpora.dictionary:built Dictionary<49865 unique tokens: ['三周年', '主席', '发表', '各界', '江泽民']...> from 12571 documents (total 625843 corpus positions)
+INFO:gensim.utils:Dictionary lifecycle event {'msg': "built Dictionary<49865 unique tokens: ['三周年', '主席', '发表', '各界', '江泽民']...> from 12571 documents (total 625843 corpus positions)", 'datetime': '2026-10-24T14:16:46.820509', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'created'}
+INFO:gensim.corpora.dictionary:discarding 29865 tokens: [('不论什么', 1), ('不容许', 1), ('势所必然', 1), ('各党派', 1), ('抵触情绪', 1), ('恭贺新禧', 1), ('国务院台湾事务办公室', 1), ('陈云林', 1), ('中国民主同盟', 1), ('共青团中央书记处', 1)]...
+INFO:gensim.corpora.dictionary:keeping 20000 tokens which were in no less than 2 and no more than 11942 (=95.0%) documents
+INFO:gensim.corpora.dictionary:resulting dictionary: Dictionary<20000 unique tokens: ['三周年', '主席', '发表', '各界', '江泽民']...>
+INFO:gensim.utils:Dictionary lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/dictionary.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-10-24T14:16:46.855561', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/dictionary.gensim
+WARNING:gensim.models.tfidfmodel:constructor received both corpus and explicit inverse document frequencies; ignoring the corpus
+INFO:gensim.utils:TfidfModel lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/tfidf.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-10-24T14:16:47.115091', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/tfidf.gensim
+INFO:gensim.models.lsimodel:using serial LSI version on this node
+INFO:gensim.models.lsimodel:updating model with new documents
+INFO:gensim.models.lsimodel:preparing a new chunk of documents
+INFO:gensim.models.lsimodel:using 100 extra samples and 2 power iterations
+INFO:gensim.models.lsimodel:1st phase: constructing (20000, 164) action matrix
+INFO:gensim.models.lsimodel:orthonormalizing (20000, 164) action matrix
+INFO:gensim.models.lsimodel:2nd phase: running dense svd on (164, 12571) matrix
+INFO:gensim.models.lsimodel:computing the final decomposition
+INFO:gensim.models.lsimodel:keeping 64 factors (discarding 37.403% of energy spectrum)
+INFO:gensim.models.lsimodel:processed documents up to #12571
+INFO:gensim.models.lsimodel:topic #0(11.798): 0.213*"的" + 0.172*"和" + 0.166*"了" + 0.154*"是" + 0.149*"在" + 0.135*"中国" + 0.127*"发展" + 0.126*"他" + 0.114*"要" + 0.113*"对"
+INFO:gensim.models.lsimodel:topic #1(7.270): 0.348*"新华社" + 0.315*"月" + 0.285*"记者" + 0.261*"日电" + 0.258*"日" + 0.183*"北京" + 0.150*"摄" + 0.147*"伊拉克" + 0.128*"总理" + 0.124*"副"
+INFO:gensim.models.lsimodel:topic #2(6.225): -0.263*"伊拉克" + -0.190*"两" + -0.186*"国" + -0.179*"中国" + 0.165*"新华社" + -0.148*"合作" + 0.147*"月" + -0.146*"关系" + -0.145*"美国" + 0.143*"记者"
+INFO:gensim.models.lsimodel:topic #3(5.887): -0.269*"我" + 0.204*"发展" + 0.177*"经济" + 0.155*"建设" + -0.155*"伊拉克" + -0.131*"人" + -0.113*"他" + -0.112*"时" + 0.100*"新华社" + -0.100*"不"
+INFO:gensim.models.lsimodel:topic #4(5.695): -0.260*"企业" + -0.217*"伊拉克" + 0.206*"我" + 0.173*"他" + 0.169*"同志" + -0.146*"经济" + 0.144*"中国" + -0.128*"核查" + 0.126*"我们" + -0.114*"美国"
+INFO:gensim.utils:LsiModel lifecycle event {'msg': 'trained LsiModel<num_terms=20000, num_topics=64, decay=1.0, chunksize=20000> in 0.96s', 'datetime': '2026-10-24T14:16:48.230905', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'created'}
+INFO:gensim.utils:Projection lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/lsi.gensim.projection', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-10-24T14:16:48.231192', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/lsi.gensim.projection
+INFO:gensim.utils:LsiModel lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/lsi.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': ['projection', 'dispatcher'], 'datetime': '2026-10-24T14:16:48.232962', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:not storing attribute projection
+INFO:gensim.utils:not storing attribute dispatcher
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/lsi.gensim
+INFO:gensim.utils:Word2Vec lifecycle event {'params': 'Word2Vec<vocab=0, vector_size=64, alpha=0.025>', 'datetime': '2026-10-24T14:16:48.282329', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'created'}
+INFO:gensim.models.word2vec:collecting all words and their counts
+INFO:gensim.models.word2vec:PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+INFO:gensim.models.word2vec:PROGRESS: at sentence #10000, processed 475406 words, keeping 43250 word types
+INFO:gensim.models.word2vec:collected 49865 word types from a corpus of 625843 raw words and 12571 sentences
+INFO:gensim.models.word2vec:Creating a fresh vocabulary
+INFO:gensim.utils:Word2Vec lifecycle event {'msg': 'effective_min_count=3 retains 20457 unique words (41.02% of original 49865, drops 29408)', 'datetime': '2026-10-24T14:16:48.331138', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.utils:Word2Vec lifecycle event {'msg': 'effective_min_count=3 leaves 588264 word corpus (94.00% of original 625843, drops 37579)', 'datetime': '2026-10-24T14:16:48.331601', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.models.word2vec:deleting the raw counts dictionary of 49865 items
+INFO:gensim.models.word2vec:sample=0.001 downsamples 31 most-common words
+INFO:gensim.utils:Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 523025.8017151543 word corpus (88.9%% of prior 588264)', 'datetime': '2026-10-24T14:16:48.356366', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.models.word2vec:estimated required memory for 20457 words and 64 dimensions: 20702484 bytes
+INFO:gensim.models.word2vec:resetting layer weights
+INFO:gensim.utils:Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-10-24T14:16:48.402134', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'build_vocab'}
+INFO:gensim.utils:Word2Vec lifecycle event {'msg': 'training model with 1 workers on 20457 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-10-24T14:16:48.402330', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'train'}
+INFO:gensim.models.word2vec:EPOCH 0 - PROGRESS: at 87.65% examples, 448989 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 0: training on 625843 raw words (523174 effective words) took 1.2s, 449036 effective words/s
+INFO:gensim.models.word2vec:EPOCH 1 - PROGRESS: at 89.09% examples, 455150 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 1: training on 625843 raw words (522991 effective words) took 1.2s, 454282 effective words/s
+INFO:gensim.models.word2vec:EPOCH 2 - PROGRESS: at 89.09% examples, 455373 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 2: training on 625843 raw words (522888 effective words) took 1.2s, 454050 effective words/s
+INFO:gensim.models.word2vec:EPOCH 3 - PROGRESS: at 89.09% examples, 452170 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 3: training on 625843 raw words (523141 effective words) took 1.2s, 451006 effective words/s
+INFO:gensim.models.word2vec:EPOCH 4 - PROGRESS: at 89.09% examples, 453038 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 4: training on 625843 raw words (522966 effective words) took 1.2s, 452209 effective words/s
+INFO:gensim.utils:Word2Vec lifecycle event {'msg': 'training on 3129215 raw words (2615160 effective words) took 5.8s, 451956 effective words/s', 'datetime': '2026-10-24T14:16:54.188762', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'train'}
+INFO:gensim.utils:Word2Vec lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/Word2Vec.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-10-24T14:16:54.189379', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:not storing attribute cum_table
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/Word2Vec.gensim
+INFO:gensim.utils:FastText lifecycle event {'params': 'FastText<vocab=0, vector_size=64, alpha=0.025>', 'datetime': '2026-10-24T14:16:54.448043', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'created'}
+INFO:gensim.models.word2vec:collecting all words and their counts
+INFO:gensim.models.word2vec:PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+INFO:gensim.models.word2vec:PROGRESS: at sentence #10000, processed 475406 words, keeping 43250 word types
+INFO:gensim.models.word2vec:collected 49865 word types from a corpus of 625843 raw words and 12571 sentences
+INFO:gensim.models.word2vec:Creating a fresh vocabulary
+INFO:gensim.utils:FastText lifecycle event {'msg': 'effective_min_count=3 retains 20457 unique words (41.02% of original 49865, drops 29408)', 'datetime': '2026-10-24T14:16:54.499306', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.utils:FastText lifecycle event {'msg': 'effective_min_count=3 leaves 588264 word corpus (94.00% of original 625843, drops 37579)', 'datetime': '2026-10-24T14:16:54.499569', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.models.word2vec:deleting the raw counts dictionary of 49865 items
+INFO:gensim.models.word2vec:sample=0.001 downsamples 31 most-common words
+INFO:gensim.utils:FastText lifecycle event {'msg': 'downsampling leaves estimated 523025.8017151543 word corpus (88.9%% of prior 588264)', 'datetime': '2026-10-24T14:16:54.524355', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.models.fasttext:estimated required memory for 20457 words, 50000 buckets and 64 dimensions: 36154152 bytes
+INFO:gensim.models.word2vec:resetting layer weights
+INFO:gensim.utils:FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-10-24T14:16:54.689999', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'build_vocab'}
+INFO:gensim.utils:FastText lifecycle event {'msg': 'training model with 1 workers on 20457 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-10-24T14:16:54.690291', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'train'}
+INFO:gensim.models.word2vec:EPOCH 0 - PROGRESS: at 66.41% examples, 313584 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 0: training on 625843 raw words (523174 effective words) took 1.7s, 312055 effective words/s
+INFO:gensim.models.word2vec:EPOCH 1 - PROGRESS: at 66.41% examples, 311625 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 1: training on 625843 raw words (522991 effective words) took 1.7s, 310374 effective words/s
+INFO:gensim.models.word2vec:EPOCH 2 - PROGRESS: at 66.41% examples, 313302 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 2: training on 625843 raw words (522888 effective words) took 1.7s, 311475 effective words/s
+INFO:gensim.models.word2vec:EPOCH 3 - PROGRESS: at 66.41% examples, 312067 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 3: training on 625843 raw words (523141 effective words) took 1.7s, 309277 effective words/s
+INFO:gensim.models.word2vec:EPOCH 4 - PROGRESS: at 66.41% examples, 312774 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 4: training on 625843 raw words (522966 effective words) took 1.7s, 310952 effective words/s
+INFO:gensim.utils:FastText lifecycle event {'msg': 'training on 3129215 raw words (2615160 effective words) took 8.4s, 310755 effective words/s', 'datetime': '2026-10-24T14:17:03.105933', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'train'}
+INFO:gensim.utils:FastText lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/FastText-2-4.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-10-24T14:17:03.178078', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:not storing attribute vectors
+INFO:gensim.utils:not storing attribute buckets_word
+INFO:gensim.utils:not storing attribute cum_table
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/FastText-2-4.gensim
+INFO:gensim.utils:FastText lifecycle event {'params': 'FastText<vocab=0, vector_size=64, alpha=0.025>', 'datetime': '2026-10-24T14:17:03.649924', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'created'}
+INFO:gensim.models.word2vec:collecting all words and their counts
+INFO:gensim.models.word2vec:PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+INFO:gensim.models.word2vec:PROGRESS: at sentence #10000, processed 475406 words, keeping 43250 word types
+INFO:gensim.models.word2vec:collected 49865 word types from a corpus of 625843 raw words and 12571 sentences
+INFO:gensim.models.word2vec:Creating a fresh vocabulary
+INFO:gensim.utils:FastText lifecycle event {'msg': 'effective_min_count=3 retains 20457 unique words (41.02% of original 49865, drops 29408)', 'datetime': '2026-10-24T14:17:03.698053', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.utils:FastText lifecycle event {'msg': 'effective_min_count=3 leaves 588264 word corpus (94.00% of original 625843, drops 37579)', 'datetime': '2026-10-24T14:17:03.698295', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.models.word2vec:deleting the raw counts dictionary of 49865 items
+INFO:gensim.models.word2vec:sample=0.001 downsamples 31 most-common words
+INFO:gensim.utils:FastText lifecycle event {'msg': 'downsampling leaves estimated 523025.8017151543 word corpus (88.9%% of prior 588264)', 'datetime': '2026-10-24T14:17:03.722290', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'prepare_vocab'}
+INFO:gensim.models.fasttext:estimated required memory for 20457 words, 50000 buckets and 64 dimensions: 35934484 bytes
+INFO:gensim.models.word2vec:resetting layer weights
+INFO:gensim.utils:FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-10-24T14:17:03.860014', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'build_vocab'}
+INFO:gensim.utils:FastText lifecycle event {'msg': 'training model with 1 workers on 20457 vocabulary and 64 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-10-24T14:17:03.860411', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'train'}
+INFO:gensim.models.word2vec:EPOCH 0 - PROGRESS: at 73.10% examples, 355613 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 0: training on 625843 raw words (523174 effective words) took 1.5s, 353809 effective words/s
+INFO:gensim.models.word2vec:EPOCH 1 - PROGRESS: at 73.10% examples, 357365 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 1: training on 625843 raw words (522991 effective words) took 1.5s, 356025 effective words/s
+INFO:gensim.models.word2vec:EPOCH 2 - PROGRESS: at 73.10% examples, 357336 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 2: training on 625843 raw words (522888 effective words) took 1.5s, 355520 effective words/s
+INFO:gensim.models.word2vec:EPOCH 3 - PROGRESS: at 73.10% examples, 351853 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 3: training on 625843 raw words (523141 effective words) took 1.5s, 352311 effective words/s
+INFO:gensim.models.word2vec:EPOCH 4 - PROGRESS: at 73.10% examples, 357974 words/s, in_qsize 1, out_qsize 0
+INFO:gensim.models.word2vec:EPOCH 4: training on 625843 raw words (522966 effective words) took 1.5s, 356217 effective words/s
+INFO:gensim.utils:FastText lifecycle event {'msg': 'training on 3129215 raw words (2615160 effective words) took 7.4s, 354676 effective words/s', 'datetime': '2026-10-24T14:17:11.233959', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'train'}
+INFO:gensim.utils:FastText lifecycle event {'fname_or_handle': '/Users/henry/Desktop/study/rw/大语言模型/hw2/models/FastText-3-6.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-10-24T14:17:11.287078', 'gensim': '4.4.0', 'python': '3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:21:08) [Clang 20.1.8 ]', 'platform': 'macOS-26.6.2-arm64-arm-64bit-Mach-O', 'event': 'saving'}
+INFO:gensim.utils:not storing attribute vectors
+INFO:gensim.utils:not storing attribute buckets_word
+INFO:gensim.utils:not storing attribute cum_table
+INFO:gensim.utils:saved /Users/henry/Desktop/study/rw/大语言模型/hw2/models/FastText-3-6.gensim

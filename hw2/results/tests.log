@@ -1,0 +1,23 @@
+test_invalid_line (test_hw2.DataTests.test_invalid_line) ... ok
+test_metadata_removed (test_hw2.DataTests.test_metadata_removed) ... ok
+test_real_split_integrity (test_hw2.DataTests.test_real_split_integrity) ... ok
+test_split_reproducible (test_hw2.DataTests.test_split_reproducible) ... ok
+test_tokenization (test_hw2.DataTests.test_tokenization) ... Building prefix dict from the default dictionary ...
+Loading model from cache /Users/henry/Desktop/study/rw/大语言模型/hw2/.cache/jieba.cache
+Loading model cost 0.235 seconds.
+Prefix dict has been built successfully.
+Building prefix dict from the default dictionary ...
+Loading model from cache /Users/henry/Desktop/study/rw/大语言模型/hw2/.cache/jieba.cache
+Loading model cost 0.237 seconds.
+Prefix dict has been built successfully.
+ok
+test_fasttext_oov (test_hw2.ModelTests.test_fasttext_oov) ... ok
+test_mean_vector (test_hw2.ModelTests.test_mean_vector) ... ok
+test_metrics (test_hw2.ModelTests.test_metrics) ... ok
+test_negative_one_dot_regression (test_hw2.ModelTests.test_negative_one_dot_regression) ... ok
+test_word2vec_oov_and_empty (test_hw2.ModelTests.test_word2vec_oov_and_empty) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.552s
+
+OK

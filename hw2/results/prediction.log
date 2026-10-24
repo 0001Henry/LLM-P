@@ -1,0 +1,16 @@
+Building prefix dict from the default dictionary ...
+Loading model from cache /Users/henry/Desktop/study/rw/大语言模型/hw2/.cache/jieba.cache
+Loading model cost 0.238 seconds.
+Prefix dict has been built successfully.
+{
+  "page": "02",
+  "method": "FastText-2-4",
+  "probabilities": {
+    "01": 0.22098731994628906,
+    "02": 0.38286107778549194,
+    "03": 0.0636771023273468,
+    "04": 0.1406620591878891,
+    "05": 0.09060056507587433,
+    "06": 0.10121184587478638
+  }
+}

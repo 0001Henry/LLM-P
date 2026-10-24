@@ -1,6 +1,8 @@
 高效率的 BERT 模型古文断句标点
 《大语言模型与应用实践》HW3 实验报告
 
+**GitHub：** [项目仓库](https://github.com/0001Henry/LLM-P) · [HW3 源代码](https://github.com/0001Henry/LLM-P/tree/main/hw3) · [在线实验报告](https://github.com/0001Henry/LLM-P/blob/main/hw3/REPORT.md) · [实验结果](https://github.com/0001Henry/LLM-P/tree/main/hw3/results)
+
 摘　要
 
 针对无标点文本的自动断句与标点恢复问题，本实验完成预训练 BERT 模型微调和长文本批量推理两个任务。首先，利用人民日报 1998 年 1 月语料，将标点恢复转化为字符级序列标注任务，在中文 BERT 上训练八分类标点预测器。其次，针对 BERT 上下文长度限制及传统滑窗的串行依赖，采用固定重叠窗口、批量前向计算和中心加权概率融合，实现长文本连续标注。

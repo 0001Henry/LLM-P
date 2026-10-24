@@ -2,6 +2,13 @@
 
 《大语言模型与应用实践》课程实验项目。
 
+## HW2：Gensim 表示学习与 FastText 文本分类
+
+- [正式实验报告](hw2/REPORT.md)
+- [环境配置与运行说明](hw2/README.md)
+- [表示学习与分类实现](hw2/experiment.py)
+- [实测结果](hw2/results/)
+
 ## HW3：高效率的 BERT 模型古文断句标点
 
 - [正式实验报告](hw3/REPORT.md)
