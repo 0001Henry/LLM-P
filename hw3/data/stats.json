@@ -1,0 +1,17 @@
+{
+  "train": {
+    "paragraphs": 13012,
+    "articles": 2479,
+    "characters": 1320531
+  },
+  "dev": {
+    "paragraphs": 1634,
+    "articles": 302,
+    "characters": 149869
+  },
+  "test": {
+    "paragraphs": 1640,
+    "articles": 304,
+    "characters": 166040
+  }
+}

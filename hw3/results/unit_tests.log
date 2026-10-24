@@ -1,0 +1,18 @@
+test_corpus (test_core.CoreTests.test_corpus) ... ok
+test_empty (test_core.CoreTests.test_empty) ... ok
+test_invalid_windows (test_core.CoreTests.test_invalid_windows) ... ok
+test_labels (test_core.CoreTests.test_labels) ... ok
+test_metrics_ignore_true_negative (test_core.CoreTests.test_metrics_ignore_true_negative) ... ok
+test_split (test_core.CoreTests.test_split) ... ok
+test_window_coverage (test_core.CoreTests.test_window_coverage) ... ok
+test_batch_equivalence_and_calls (test_inference.InferenceTests.test_batch_equivalence_and_calls) ... ok
+test_empty_and_short (test_inference.InferenceTests.test_empty_and_short) ... ok
+test_overlapping_weights (test_inference.InferenceTests.test_overlapping_weights) ... ok
+test_real_bert_alignment_and_backward (test_inference.InferenceTests.test_real_bert_alignment_and_backward) ... ok
+test_real_corpus_split_disjoint (test_inference.InferenceTests.test_real_corpus_split_disjoint) ... ok
+test_serial_progress (test_inference.InferenceTests.test_serial_progress) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.145s
+
+OK

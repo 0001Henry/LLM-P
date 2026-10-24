@@ -1,0 +1,56 @@
+Some weights of BertForTokenClassification were not initialized from the model checkpoint at models/bert-base-chinese and are newly initialized: ['classifier.bias', 'classifier.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+epoch=1 step=10/170 loss=0.8852
+epoch=1 step=20/170 loss=0.6288
+epoch=1 step=30/170 loss=0.5251
+epoch=1 step=40/170 loss=0.4659
+epoch=1 step=50/170 loss=0.4176
+epoch=1 step=60/170 loss=0.3821
+epoch=1 step=70/170 loss=0.3572
+epoch=1 step=80/170 loss=0.3365
+epoch=1 step=90/170 loss=0.3169
+epoch=1 step=100/170 loss=0.3020
+epoch=1 step=110/170 loss=0.2905
+epoch=1 step=120/170 loss=0.2790
+epoch=1 step=130/170 loss=0.2675
+epoch=1 step=140/170 loss=0.2603
+epoch=1 step=150/170 loss=0.2542
+epoch=1 step=160/170 loss=0.2472
+epoch=1 step=170/170 loss=0.2422
+{"epoch": 1, "train_loss": 0.2422473328006078, "dev": {"punctuation_micro": {"precision": 0.6752503576537912, "recall": 0.5805658056580566, "f1": 0.6243386243386243}, "boundary": {"precision": 0.882689556509299, "recall": 0.7589175891758918, "f1": 0.8161375661375662}, "per_label": {"，": {"precision": 0.664179104477612, "recall": 0.6013513513513513, "f1": 0.6312056737588652}, "。": {"precision": 0.6740088105726872, "recall": 0.7216981132075472, "f1": 0.6970387243735763}, "？": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "！": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "；": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "：": {"precision": 0.6666666666666666, "recall": 0.14285714285714285, "f1": 0.23529411764705882}, "、": {"precision": 0.746268656716418, "recall": 0.4065040650406504, "f1": 0.5263157894736842}}, "characters": 9404, "accuracy": 0.9550191407911527}}
+epoch=2 step=10/170 loss=0.1380
+epoch=2 step=20/170 loss=0.1481
+epoch=2 step=30/170 loss=0.1403
+epoch=2 step=40/170 loss=0.1396
+epoch=2 step=50/170 loss=0.1403
+epoch=2 step=60/170 loss=0.1374
+epoch=2 step=70/170 loss=0.1364
+epoch=2 step=80/170 loss=0.1343
+epoch=2 step=90/170 loss=0.1350
+epoch=2 step=100/170 loss=0.1357
+epoch=2 step=110/170 loss=0.1347
+epoch=2 step=120/170 loss=0.1334
+epoch=2 step=130/170 loss=0.1331
+epoch=2 step=140/170 loss=0.1340
+epoch=2 step=150/170 loss=0.1340
+epoch=2 step=160/170 loss=0.1343
+epoch=2 step=170/170 loss=0.1337
+{"epoch": 2, "train_loss": 0.133663796629547, "dev": {"punctuation_micro": {"precision": 0.703956343792633, "recall": 0.6346863468634686, "f1": 0.6675291073738681}, "boundary": {"precision": 0.8840381991814461, "recall": 0.7970479704797048, "f1": 0.8382923673997412}, "per_label": {"，": {"precision": 0.6829268292682927, "recall": 0.6936936936936937, "f1": 0.688268156424581}, "。": {"precision": 0.7110091743119266, "recall": 0.7311320754716981, "f1": 0.7209302325581395}, "？": {"precision": 1.0, "recall": 0.25, "f1": 0.4}, "！": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "；": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "：": {"precision": 1.0, "recall": 0.14285714285714285, "f1": 0.25}, "、": {"precision": 0.819672131147541, "recall": 0.4065040650406504, "f1": 0.5434782608695652}}, "characters": 9404, "accuracy": 0.9593789876648234}}
+epoch=3 step=10/170 loss=0.1161
+epoch=3 step=20/170 loss=0.1080
+epoch=3 step=30/170 loss=0.1083
+epoch=3 step=40/170 loss=0.1103
+epoch=3 step=50/170 loss=0.1134
+epoch=3 step=60/170 loss=0.1138
+epoch=3 step=70/170 loss=0.1128
+epoch=3 step=80/170 loss=0.1123
+epoch=3 step=90/170 loss=0.1124
+epoch=3 step=100/170 loss=0.1124
+epoch=3 step=110/170 loss=0.1129
+epoch=3 step=120/170 loss=0.1118
+epoch=3 step=130/170 loss=0.1127
+epoch=3 step=140/170 loss=0.1128
+epoch=3 step=150/170 loss=0.1119
+epoch=3 step=160/170 loss=0.1126
+epoch=3 step=170/170 loss=0.1137
+{"epoch": 3, "train_loss": 0.11372261304526542, "dev": {"punctuation_micro": {"precision": 0.7202702702702702, "recall": 0.6555965559655597, "f1": 0.686413393432067}, "boundary": {"precision": 0.8837837837837837, "recall": 0.8044280442804428, "f1": 0.8422408242112042}, "per_label": {"，": {"precision": 0.7380352644836272, "recall": 0.6599099099099099, "f1": 0.6967895362663497}, "。": {"precision": 0.6604477611940298, "recall": 0.8349056603773585, "f1": 0.7375}, "？": {"precision": 1.0, "recall": 0.25, "f1": 0.4}, "！": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "；": {"precision": 0.0, "recall": 0.0, "f1": 0.0}, "：": {"precision": 1.0, "recall": 0.21428571428571427, "f1": 0.35294117647058826}, "、": {"precision": 0.8309859154929577, "recall": 0.4796747967479675, "f1": 0.6082474226804123}}, "characters": 9404, "accuracy": 0.9610803913228414}}
