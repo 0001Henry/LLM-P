@@ -1,0 +1,694 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "kenlm_python": "0.3.0",
+    "numpy": "2.2.6",
+    "kenlm_source_commit": "4cb443e60b7bf2c0ddf3c745378f76cb59e254e5",
+    "lmplz_sha256": "8ba678a7c1aca185623081c22d22679cbec299c28ce520d70d7be87da19705b7"
+  },
+  "memory_budget": "256M",
+  "repeats": 3,
+  "run_sequence": [
+    {
+      "name": "5gram",
+      "repeat": 3
+    },
+    {
+      "name": "3gram-50",
+      "repeat": 2
+    },
+    {
+      "name": "5gram",
+      "repeat": 2
+    },
+    {
+      "name": "5gram",
+      "repeat": 1
+    },
+    {
+      "name": "3gram-50",
+      "repeat": 3
+    },
+    {
+      "name": "3gram-50",
+      "repeat": 1
+    },
+    {
+      "name": "3gram",
+      "repeat": 3
+    },
+    {
+      "name": "2gram",
+      "repeat": 3
+    },
+    {
+      "name": "3gram-25",
+      "repeat": 1
+    },
+    {
+      "name": "3gram",
+      "repeat": 1
+    },
+    {
+      "name": "3gram",
+      "repeat": 2
+    },
+    {
+      "name": "3gram-25",
+      "repeat": 3
+    },
+    {
+      "name": "2gram",
+      "repeat": 1
+    },
+    {
+      "name": "2gram",
+      "repeat": 2
+    },
+    {
+      "name": "3gram-25",
+      "repeat": 2
+    }
+  ],
+  "models": [
+    {
+      "name": "2gram",
+      "order": 2,
+      "training_file": "train.txt",
+      "runs": [
+        {
+          "repeat": 1,
+          "seconds": 0.1913926659617573
+        },
+        {
+          "repeat": 2,
+          "seconds": 0.19860533403698355
+        },
+        {
+          "repeat": 3,
+          "seconds": 0.18516416603233665
+        }
+      ],
+      "ngram_counts": {
+        "1": 48607,
+        "2": 386381
+      },
+      "arpa_bytes": 10475322,
+      "arpa_sha256": "565f33d76c024658d5f1ad124c8abb60385013b716a1362aad973117966d5c7f",
+      "median_seconds": 0.1913926659617573,
+      "training_sentences": 34576,
+      "training_tokens": 897418,
+      "evaluation": {
+        "dev": {
+          "sentences": 4045,
+          "predicted_tokens_including_eos": 106353,
+          "log10_probability": -289759.3496655014,
+          "perplexity": 530.2804944363648,
+          "oov_tokens": 3579,
+          "matched_order_counts": {
+            "2": 69295,
+            "1": 37058
+          }
+        },
+        "test": {
+          "sentences": 4303,
+          "predicted_tokens_including_eos": 116906,
+          "log10_probability": -318741.18452101335,
+          "perplexity": 532.689490928988,
+          "oov_tokens": 4153,
+          "matched_order_counts": {
+            "2": 75824,
+            "1": 41082
+          }
+        }
+      }
+    },
+    {
+      "name": "3gram",
+      "order": 3,
+      "training_file": "train.txt",
+      "runs": [
+        {
+          "repeat": 1,
+          "seconds": 0.3717930829152465
+        },
+        {
+          "repeat": 2,
+          "seconds": 0.3588106249226257
+        },
+        {
+          "repeat": 3,
+          "seconds": 0.356202166993171
+        }
+      ],
+      "ngram_counts": {
+        "1": 48607,
+        "2": 386381,
+        "3": 696510
+      },
+      "arpa_bytes": 35175859,
+      "arpa_sha256": "05d617c766b606c952575a1053c21fdc27e545a74e689ae38a826a75d5458fa8",
+      "median_seconds": 0.3588106249226257,
+      "training_sentences": 34576,
+      "training_tokens": 897418,
+      "evaluation": {
+        "dev": {
+          "sentences": 4045,
+          "predicted_tokens_including_eos": 106353,
+          "log10_probability": -280735.9417575436,
+          "perplexity": 436.17594351881706,
+          "oov_tokens": 3579,
+          "matched_order_counts": {
+            "2": 41842,
+            "1": 37058,
+            "3": 27453
+          }
+        },
+        "test": {
+          "sentences": 4303,
+          "predicted_tokens_including_eos": 116906,
+          "log10_probability": -309095.91003411403,
+          "perplexity": 440.524026164201,
+          "oov_tokens": 4153,
+          "matched_order_counts": {
+            "2": 45971,
+            "1": 41082,
+            "3": 29853
+          }
+        }
+      }
+    },
+    {
+      "name": "5gram",
+      "order": 5,
+      "training_file": "train.txt",
+      "runs": [
+        {
+          "repeat": 1,
+          "seconds": 0.6984930830076337
+        },
+        {
+          "repeat": 2,
+          "seconds": 0.6610252499813214
+        },
+        {
+          "repeat": 3,
+          "seconds": 0.6885954580502585
+        }
+      ],
+      "ngram_counts": {
+        "1": 48607,
+        "2": 386381,
+        "3": 696510,
+        "4": 790917,
+        "5": 795878
+      },
+      "arpa_bytes": 112388294,
+      "arpa_sha256": "d0488b3ba12bd6d44f9c1fecd2b892dc8cf5fde0c3dfa9418285c257d52e0eca",
+      "median_seconds": 0.6885954580502585,
+      "training_sentences": 34576,
+      "training_tokens": 897418,
+      "evaluation": {
+        "dev": {
+          "sentences": 4045,
+          "predicted_tokens_including_eos": 106353,
+          "log10_probability": -279644.30661719677,
+          "perplexity": 425.9880795675066,
+          "oov_tokens": 3579,
+          "matched_order_counts": {
+            "2": 41842,
+            "1": 37058,
+            "3": 17885,
+            "4": 5466,
+            "5": 4102
+          }
+        },
+        "test": {
+          "sentences": 4303,
+          "predicted_tokens_including_eos": 116906,
+          "log10_probability": -307761.672573724,
+          "perplexity": 429.0981987524693,
+          "oov_tokens": 4153,
+          "matched_order_counts": {
+            "2": 45971,
+            "1": 41082,
+            "3": 19074,
+            "4": 5902,
+            "5": 4877
+          }
+        }
+      }
+    },
+    {
+      "name": "3gram-25",
+      "order": 3,
+      "training_file": "train25.txt",
+      "runs": [
+        {
+          "repeat": 1,
+          "seconds": 0.10840716701932251
+        },
+        {
+          "repeat": 2,
+          "seconds": 0.10955287492834032
+        },
+        {
+          "repeat": 3,
+          "seconds": 0.10698741709347814
+        }
+      ],
+      "ngram_counts": {
+        "1": 24055,
+        "2": 130939,
+        "3": 195175
+      },
+      "arpa_bytes": 10931906,
+      "arpa_sha256": "532dababfe7715a8514b90d59a2febd634503da8ad9a59ee0e01d7e23d3d2a16",
+      "median_seconds": 0.10840716701932251,
+      "training_sentences": 8644,
+      "training_tokens": 223335
+    },
+    {
+      "name": "3gram-50",
+      "order": 3,
+      "training_file": "train50.txt",
+      "runs": [
+        {
+          "repeat": 1,
+          "seconds": 0.19694979197811335
+        },
+        {
+          "repeat": 2,
+          "seconds": 0.2086120001040399
+        },
+        {
+          "repeat": 3,
+          "seconds": 0.19678045890759677
+        }
+      ],
+      "ngram_counts": {
+        "1": 34437,
+        "2": 227367,
+        "3": 371296
+      },
+      "arpa_bytes": 19761776,
+      "arpa_sha256": "db637faa0138e316b850f58ad7be0434aa1ccac0fca891e673ddf28816ea6d63",
+      "median_seconds": 0.19694979197811335,
+      "training_sentences": 17288,
+      "training_tokens": 447723
+    }
+  ],
+  "prefix": "在阳光明媚的五月，我们学校胜利召开了",
+  "prefix_tokens": [
+    "在",
+    "阳光明媚",
+    "的",
+    "五月",
+    ",",
+    "我们",
+    "学校",
+    "胜利",
+    "召开",
+    "了"
+  ],
+  "generations": [
+    {
+      "tokens": [
+        ",",
+        "在",
+        "北京",
+        "1月",
+        "12日",
+        "电",
+        "(",
+        "记者",
+        "王",
+        "磊",
+        ")"
+      ],
+      "continuation": ",在北京1月12日电(记者王磊)",
+      "stopped_at_eos": true,
+      "seconds": 0.10220700001809746,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 2,
+      "setting": "greedy",
+      "temperature": 0,
+      "top_k": 0,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "一",
+        "年",
+        "。"
+      ],
+      "continuation": "一年。",
+      "stopped_at_eos": true,
+      "seconds": 0.048294999985955656,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 2,
+      "setting": "low-temperature",
+      "temperature": 0.7,
+      "top_k": 10,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "对",
+        "香港",
+        "海关",
+        "税收",
+        "收入",
+        "就",
+        "此",
+        "、",
+        "李",
+        "岚清",
+        "还",
+        "做",
+        "。"
+      ],
+      "continuation": "对香港海关税收收入就此、李岚清还做。",
+      "stopped_at_eos": true,
+      "seconds": 0.14938516705296934,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 2,
+      "setting": "top-k",
+      "temperature": 1.0,
+      "top_k": 50,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "迈进",
+        "报告",
+        "通风",
+        "集聚",
+        "效应",
+        "排解",
+        "一成不变",
+        "反帝",
+        ";",
+        "吃",
+        "同",
+        "585.9亿",
+        "欣",
+        "专心致志",
+        "青少年",
+        "更",
+        "陈",
+        "自昌",
+        "商住",
+        "细致",
+        "设点",
+        "非法",
+        "才力",
+        "不预则废",
+        "投机商",
+        "企业",
+        "造成",
+        "的",
+        "各项",
+        "拖拉机",
+        "轻易",
+        "收尾",
+        "全球",
+        "行动",
+        "四",
+        "年",
+        "的",
+        "学者",
+        "最近",
+        "尼泊尔"
+      ],
+      "continuation": "迈进报告通风集聚效应排解一成不变反帝;吃同585.9亿欣专心致志青少年更陈自昌商住细致设点非法才力不预则废投机商企业造成的各项拖拉机轻易收尾全球行动四年的学者最近尼泊尔",
+      "stopped_at_eos": false,
+      "seconds": 0.5260394170181826,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 2,
+      "setting": "top-p",
+      "temperature": 1.3,
+      "top_k": 0,
+      "top_p": 0.95,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "。"
+      ],
+      "continuation": "。",
+      "stopped_at_eos": true,
+      "seconds": 0.020727791939862072,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 3,
+      "setting": "greedy",
+      "temperature": 0,
+      "top_k": 0,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "一",
+        "系列",
+        "新",
+        "的",
+        "一",
+        "条",
+        "是",
+        "所有权",
+        "问题",
+        ",",
+        "也",
+        "没有",
+        "什么",
+        "困难",
+        ",",
+        "但",
+        "他",
+        "的",
+        "《",
+        "关于",
+        "发展",
+        "两岸",
+        "经济",
+        "交流",
+        "与",
+        "合作",
+        ",",
+        "并",
+        "不",
+        "是",
+        "在",
+        "我国",
+        "的",
+        "民族",
+        "区域",
+        "自治",
+        "制度",
+        ",",
+        "是",
+        "中国"
+      ],
+      "continuation": "一系列新的一条是所有权问题,也没有什么困难,但他的《关于发展两岸经济交流与合作,并不是在我国的民族区域自治制度,是中国",
+      "stopped_at_eos": false,
+      "seconds": 0.4435808329144493,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 3,
+      "setting": "low-temperature",
+      "temperature": 0.7,
+      "top_k": 10,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "这",
+        "一",
+        "人",
+        ")"
+      ],
+      "continuation": "这一人)",
+      "stopped_at_eos": true,
+      "seconds": 0.05184833402745426,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 3,
+      "setting": "top-k",
+      "temperature": 1.0,
+      "top_k": 50,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "村级",
+        "正是",
+        "政通人和",
+        "专科",
+        "。"
+      ],
+      "continuation": "村级正是政通人和专科。",
+      "stopped_at_eos": true,
+      "seconds": 0.06530020805075765,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 3,
+      "setting": "top-p",
+      "temperature": 1.3,
+      "top_k": 0,
+      "top_p": 0.95,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "。"
+      ],
+      "continuation": "。",
+      "stopped_at_eos": true,
+      "seconds": 0.023571416037157178,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 5,
+      "setting": "greedy",
+      "temperature": 0,
+      "top_k": 0,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "“",
+        "中国",
+        "第一",
+        "次",
+        ",",
+        "也",
+        "有",
+        "一",
+        "种",
+        "对",
+        "出生地",
+        "的",
+        "眷念",
+        "和",
+        "淡淡",
+        "的",
+        "忧伤",
+        ",",
+        "但",
+        "他",
+        "在",
+        "中国",
+        "剧院",
+        "、",
+        "省",
+        "、",
+        "市",
+        "、",
+        "自治区",
+        "对",
+        "行业",
+        "中",
+        "的",
+        "一",
+        "项",
+        "重要",
+        "内容",
+        ",",
+        "是",
+        "在"
+      ],
+      "continuation": "“中国第一次,也有一种对出生地的眷念和淡淡的忧伤,但他在中国剧院、省、市、自治区对行业中的一项重要内容,是在",
+      "stopped_at_eos": false,
+      "seconds": 0.4761615419993177,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 5,
+      "setting": "low-temperature",
+      "temperature": 0.7,
+      "top_k": 10,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "出征",
+        ",",
+        "、",
+        "吴",
+        "邦国",
+        "与",
+        "其",
+        "和",
+        "的",
+        "。"
+      ],
+      "continuation": "出征,、吴邦国与其和的。",
+      "stopped_at_eos": true,
+      "seconds": 0.13178454095032066,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 5,
+      "setting": "top-k",
+      "temperature": 1.0,
+      "top_k": 50,
+      "top_p": 1,
+      "seed": 42,
+      "max_tokens": 40
+    },
+    {
+      "tokens": [
+        "待",
+        "90",
+        "减半",
+        "采油",
+        "。"
+      ],
+      "continuation": "待90减半采油。",
+      "stopped_at_eos": true,
+      "seconds": 0.06966708297841251,
+      "prefix_oov": [
+        "阳光明媚"
+      ],
+      "order": 5,
+      "setting": "top-p",
+      "temperature": 1.3,
+      "top_k": 0,
+      "top_p": 0.95,
+      "seed": 42,
+      "max_tokens": 40
+    }
+  ]
+}

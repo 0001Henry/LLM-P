@@ -2,6 +2,13 @@
 
 《大语言模型与应用实践》课程实验项目。
 
+## HW1：n-gram 建模训练
+
+- [正式实验报告](hw1/REPORT.md)
+- [环境配置与运行说明](hw1/README.md)
+- [训练与评估代码](hw1/experiment.py)
+- [实测结果](hw1/results/)
+
 ## HW2：Gensim 表示学习与 FastText 文本分类
 
 - [正式实验报告](hw2/REPORT.md)

@@ -1,0 +1,55 @@
+Train 5gram, repeat 3
+  0.689 s, 2,718,293 n-grams
+Train 3gram-50, repeat 2
+  0.209 s, 633,100 n-grams
+Train 5gram, repeat 2
+  0.661 s, 2,718,293 n-grams
+Train 5gram, repeat 1
+  0.698 s, 2,718,293 n-grams
+Train 3gram-50, repeat 3
+  0.197 s, 633,100 n-grams
+Train 3gram-50, repeat 1
+  0.197 s, 633,100 n-grams
+Train 3gram, repeat 3
+  0.356 s, 1,131,498 n-grams
+Train 2gram, repeat 3
+  0.185 s, 434,988 n-grams
+Train 3gram-25, repeat 1
+  0.108 s, 350,169 n-grams
+Train 3gram, repeat 1
+  0.372 s, 1,131,498 n-grams
+Train 3gram, repeat 2
+  0.359 s, 1,131,498 n-grams
+Train 3gram-25, repeat 3
+  0.107 s, 350,169 n-grams
+Train 2gram, repeat 1
+  0.191 s, 434,988 n-grams
+Train 2gram, repeat 2
+  0.199 s, 434,988 n-grams
+Train 3gram-25, repeat 2
+  0.110 s, 350,169 n-grams
+Loading the LM will be faster if you build a binary file.
+Reading /Users/henry/Desktop/study/rw/大语言模型/hw1/models/2gram.arpa
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Generate 2gram: greedy
+Generate 2gram: low-temperature
+Generate 2gram: top-k
+Generate 2gram: top-p
+Loading the LM will be faster if you build a binary file.
+Reading /Users/henry/Desktop/study/rw/大语言模型/hw1/models/3gram.arpa
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Generate 3gram: greedy
+Generate 3gram: low-temperature
+Generate 3gram: top-k
+Generate 3gram: top-p
+Loading the LM will be faster if you build a binary file.
+Reading /Users/henry/Desktop/study/rw/大语言模型/hw1/models/5gram.arpa
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Generate 5gram: greedy
+Generate 5gram: low-temperature
+Generate 5gram: top-k
+Generate 5gram: top-p
+Saved results/metrics.json

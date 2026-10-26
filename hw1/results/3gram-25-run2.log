@@ -1,0 +1,25 @@
+=== 1/5 Counting and sorting n-grams ===
+Reading fd 3
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Unigram tokens 223335 types 24055
+=== 2/5 Calculating and sorting adjusted counts ===
+Chain sizes: 1:288660 2:93268456 3:174878352
+Statistics:
+1 24055 D1=0.661361 D2=1.03027 D3+=1.40961
+2 130939 D1=0.816501 D2=1.16422 D3+=1.48235
+3 195175 D1=0.911866 D2=1.30917 D3+=1.57981
+Memory estimate for binary LM:
+type      kB
+probing 7110 assuming -p 1.5
+probing 7971 assuming -r models -p 1.5
+trie    3194 without quantization
+trie    1898 assuming -q 8 -b 8 quantization 
+trie    3026 assuming -a 22 array pointer compression
+trie    1730 assuming -a 22 -q 8 -b 8 array pointer compression and quantization
+=== 3/5 Calculating and sorting initial probabilities ===
+Chain sizes: 1:288660 2:2095024 3:3903500
+=== 4/5 Calculating and writing order-interpolated probabilities ===
+Chain sizes: 1:288660 2:2095024 3:3903500
+=== 5/5 Writing ARPA model ===
+lmplz	98123776	97927168	RSSMax:98123776 kB	user:0.104281	sys:0.025777	CPU:0.130082	real:0.103111

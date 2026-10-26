@@ -1,0 +1,30 @@
+{
+  "source": "1998-01-2003版-带音.txt",
+  "source_sha256": "37b85555df2f72642ff9815ac01f51d4f50024d80ca0e2e8a6be6f93b1038639",
+  "seed": 42,
+  "parsed_paragraphs": 19358,
+  "removed_pronunciations": 14409,
+  "removed_layout_marks": 1890,
+  "duplicate_sentences_removed": 522,
+  "vocabulary_size": 48604,
+  "splits": {
+    "train": {
+      "articles": 2516,
+      "sentences": 34576,
+      "tokens": 897418,
+      "oov_tokens": 0
+    },
+    "dev": {
+      "articles": 309,
+      "sentences": 4045,
+      "tokens": 102308,
+      "oov_tokens": 3579
+    },
+    "test": {
+      "articles": 305,
+      "sentences": 4303,
+      "tokens": 112603,
+      "oov_tokens": 4153
+    }
+  }
+}
